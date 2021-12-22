@@ -6,10 +6,13 @@ pantalla que diga “CORRECTO”, en caso contrario, se deberá imprimir
 */
 package dificultad.media;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Ejercicio10 {
 
     public static void main(String[] args) {
-        
+        Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
     }
     
 }

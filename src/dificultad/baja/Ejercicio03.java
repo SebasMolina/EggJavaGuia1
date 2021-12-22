@@ -3,7 +3,7 @@ package dificultad.baja;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio03 {
 
     /*
     Escribir un programa que pida una frase y la muestre toda en mayúsculas y

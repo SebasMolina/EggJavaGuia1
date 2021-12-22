@@ -3,7 +3,7 @@ package dificultad.baja;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ejercicio2 {
+public class Ejercicio02 {
 
     /*
     Escribir un programa que pida tu nombre, lo guarde en una variable 

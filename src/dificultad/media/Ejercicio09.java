@@ -9,11 +9,16 @@ package dificultad.media;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ejercicio9 {
+public class Ejercicio09 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
-        
-    }
-    
+        System.out.print("Ingrese una frase: ");
+        String frase = leer.next();
+        if (frase.length() == 8){
+            System.out.println("CORRECTO, La frase tiene 8 caracteres");
+        } else {
+            System.out.println("INCORRECTO, La frase NO tiene 8 caracteres");
+        }
+    }    
 }

@@ -3,7 +3,7 @@ package dificultad.baja;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Ejercicio1 {
+public class Ejercicio01 {
 /*
     Escribir un programa que pida dos números enteros por teclado y 
     calcule la suma de los dos. 
