@@ -13,6 +13,15 @@ public class Ejercicio10 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
+        System.out.print("Ingrese una frase: ");
+        String frase = leer.next();
+        //System.out.println(frase.substring(0,1));
+        if(frase.substring(0,1).toLowerCase().equals("a")){
+            System.out.println("CORRECTO");
+        } else {
+            System.out.println("INCORRECTO");
+        }
+        
     }
     
 }
