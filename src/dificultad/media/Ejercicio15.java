@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Ejercicio15 {
 
     public static void main(String[] args) {
-                Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
+        Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
                 
         
         
