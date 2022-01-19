@@ -13,7 +13,25 @@ public class Ejercicio15 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
-                
+        int nro=1, suma=0;
+        int[] numeros = new int[20];
+        for (int i= 0; i< 20; i++){
+            System.out.print("Ingrese un valor: ");
+            nro = leer.nextInt();
+            numeros[i]=nro;
+            if (nro==0){
+                System.out.println("Se capturó el numero cero");
+                break;
+            }
+            if (nro > 0){
+                suma += nro;
+            }
+        }
+        for (int i=0; i<numeros.length;i++){
+            System.out.print(numeros[i]+" ");
+        }
+        System.out.println("");
+        System.out.println("El resultado de la suma es : "+suma);
         
         
     }

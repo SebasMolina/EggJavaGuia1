@@ -24,6 +24,53 @@ public class Ejercicio14 {
 
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
+        System.out.print("Ingrese el 1º valor: ");
+        int valor1 = leer.nextInt();
+        System.out.print("Ingrese el 2º valor: ");
+        int valor2 = leer.nextInt();
+        int menu=0;
+        while (menu!=5){
+            System.out.println("MENU");
+            System.out.println("1.Sumar | 2.Restar | 3.Multiplicar | 4.Dividir | 5.Salir");
+            System.out.print("Elija opción: ");
+            menu = leer.nextInt();
+            switch(menu){
+                case 1:
+                    //sumar
+                    System.out.print("SUMA: ");
+                    System.out.println(valor1+valor2);
+                    break;
+                case 2:
+                    //restar
+                    System.out.print("RESTA: ");
+                    System.out.println(valor1-valor2);
+                    break;
+                case 3:
+                    //multiplicar
+                    System.out.print("MULTIPLICACION:");
+                    System.out.println(valor1*valor2);
+                    break;
+                case 4:
+                    //division
+                    System.out.print("DIVISION: ");
+                    System.out.println((double)valor1/valor2);
+                    break;
+                case 5:
+                    System.out.print("Desea salir del programa? S/N: ");
+                    String salir = leer.next();
+                    if (salir.toUpperCase().contentEquals("S")){
+                        break;
+                    } else if (salir.toUpperCase().contentEquals("N")){
+                        menu=0;
+                        break;
+                    } else {
+                        menu=0;
+                        break;
+                    }
+                default:
+                    break;
+            }
+        }
         
     }
     

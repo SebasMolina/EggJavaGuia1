@@ -12,11 +12,28 @@ se utilizan las siguientes funciones de Java Substring(), Length(), equals().
 */
 package dificultad.media;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Ejercicio16 {
 
     public static void main(String[] args) {
-        
-
+        final String fde = "&&&&&";
+        Scanner leer = new Scanner(System.in, "ISO-8859-1").useDelimiter("\n").useLocale(Locale.US);
+        System.out.println("Bienvenido al sistema emulado de un dispositivo RS232");
+        System.out.print("Ingrese los comandos que desea probar: ");
+        int correcta=0, incorrecta=0;
+        String valor = leer.next();
+        while (!valor.equals(fde)){
+            if (valor.length()== 5 && valor.toUpperCase().startsWith("X") && valor.toUpperCase().endsWith("O")){
+                correcta++;
+            } else {
+                incorrecta++;
+            }
+            valor = leer.next();
+        }
+        System.out.println("COMANDOS CORRECTOS: "+correcta);
+        System.out.println("COMANDOS INCORRECTOS: "+incorrecta);
     }
     
 }
