@@ -19,9 +19,11 @@ public class Ejercicio18 {
         while(i<4){
             System.out.print("Ingrese valor "+(i+1)+": ");
             int nro = leer.nextInt();
+
             if(nro>0 && nro<21){
-                            for(int j=0; j<nro; j++){
-                System.out.print("*");
+                System.out.print(nro);
+                for(int j=0; j<nro; j++){
+                    System.out.print("*");
             }
             System.out.println("");
             i++;

@@ -25,7 +25,7 @@ public class Ejercicio21 {
     
     public static void cargaVector(int[] vector){
         for (int i=0; i < vector.length; i++){
-            vector[i]= (int) (Math.random() * 100);;
+            vector[i]= (int) (Math.random() * 11);;
         }
     }
     
